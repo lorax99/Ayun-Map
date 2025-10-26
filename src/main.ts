@@ -1,9 +1,11 @@
 import "leaflet/dist/leaflet.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./style.css";
 import * as L from "leaflet";
 import ayunMap from "./assets/Ayun Map Aktuell.jpg";
+import { getMarker } from "./markers/markers";
+import { faCaravan } from "@fortawesome/free-solid-svg-icons";
 
-console.log("He");
 // Coordinates in CRS.Simple take the form of [y, x] instead of [x, y].
 const AYUN_MAP_HEIGHT = 2483;
 const AYUN_MAP_WIDTH = 3513;
@@ -24,3 +26,7 @@ const map = L.map("map", {
 L.imageOverlay(ayunMap, bounds).addTo(map);
 
 map.fitBounds(bounds);
+
+//#region Markers
+// TODO: missing import for fontAwesome style
+getMarker(faCaravan, [AYUN_MAP_HEIGHT - 836, 1274]).addTo(map);

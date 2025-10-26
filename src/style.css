@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #393d47;
+}
+
 /* Map specifics */
 #map {
   /* Global vars */
@@ -8,5 +15,5 @@
   height: calc(var(--ayun-map-height) / var(--map-scale));
   width: calc(var(--ayun-map-width) / var(--map-scale));
 
-  background-color: #aebdb6;
+  background-color: #858994;
 }
