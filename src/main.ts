@@ -8,8 +8,8 @@ import { faCaravan } from "@fortawesome/free-solid-svg-icons";
 
 // Coordinates in CRS.Simple take the form of [y, x] instead of [x, y].
 const AYUN_MAP_HEIGHT = 2483;
-const AYUN_MAP_WIDTH = 3513;
-const AYUN_MAP_RATIO = AYUN_MAP_HEIGHT / AYUN_MAP_WIDTH;
+// const AYUN_MAP_WIDTH = 3513;
+// const AYUN_MAP_RATIO = AYUN_MAP_HEIGHT / AYUN_MAP_WIDTH;
 
 //#region Map
 // TODO: fix the bounds
